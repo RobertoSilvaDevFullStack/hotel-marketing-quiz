@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Marketing Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      /* Custom shapes for Kahoot-style icons */
+      .shape-triangle {
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      }
+      .shape-diamond {
+        transform: rotate(45deg);
+      }
+      /* Animation for confirmation checkmark */
+      @keyframes popIn {
+        0% { transform: scale(0); opacity: 0; }
+        60% { transform: scale(1.2); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      .animate-pop-in {
+        animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "socket.io-client": "https://cdn.socket.io/4.7.4/socket.io.esm.min.js",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "http": "https://aistudiocdn.com/http@^0.0.1-security",
+    "url": "https://aistudiocdn.com/url@^0.11.4",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "pg": "https://aistudiocdn.com/pg@^8.16.3",
+    "socket.io": "https://aistudiocdn.com/socket.io@^4.8.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

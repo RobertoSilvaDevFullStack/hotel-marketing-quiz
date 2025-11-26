@@ -1,0 +1,5 @@
+{
+  "name": "Hotel Marketing Quiz",
+  "description": "A live interactive quiz application for hotel marketing events, featuring a host screen and participant mobile interface simulation.",
+  "requestFramePermissions": []
+}
