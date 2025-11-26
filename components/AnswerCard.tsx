@@ -11,13 +11,13 @@ interface AnswerCardProps {
   voteCount?: number;
 }
 
-export const AnswerCard: React.FC<AnswerCardProps> = ({ 
-  option, 
-  onClick, 
-  disabled, 
-  showText = true, 
+export const AnswerCard: React.FC<AnswerCardProps> = ({
+  option,
+  onClick,
+  disabled,
+  showText = true,
   selected,
-  voteCount 
+  voteCount
 }) => {
   let bgClass = '';
   switch (option.color) {
@@ -46,12 +46,12 @@ export const AnswerCard: React.FC<AnswerCardProps> = ({
           <ShapeIcon shape={option.shape} />
         </div>
         {showText && (
-          <span className="text-left text-lg md:text-2xl leading-tight drop-shadow-md truncate">
+          <span className="text-left text-xl md:text-3xl font-extrabold leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] truncate">
             {option.text}
           </span>
         )}
       </div>
-      
+
       {/* Vote Count Badge */}
       {typeof voteCount === 'number' && (
         <div className="flex-shrink-0 ml-4 bg-black/20 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20 min-w-[60px] text-center">
@@ -62,11 +62,11 @@ export const AnswerCard: React.FC<AnswerCardProps> = ({
       {/* Animated Checkmark Overlay */}
       {selected && (
         <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
-           <div className="bg-white text-green-600 rounded-full p-3 shadow-2xl animate-pop-in flex items-center justify-center">
-              <svg className="w-12 h-12 md:w-16 md:h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7" />
-              </svg>
-           </div>
+          <div className="bg-white text-green-600 rounded-full p-3 shadow-2xl animate-pop-in flex items-center justify-center">
+            <svg className="w-12 h-12 md:w-16 md:h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
         </div>
       )}
     </button>
