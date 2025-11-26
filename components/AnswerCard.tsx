@@ -46,7 +46,7 @@ export const AnswerCard: React.FC<AnswerCardProps> = ({
           <ShapeIcon shape={option.shape} />
         </div>
         {showText && (
-          <span className="text-left text-xl md:text-3xl font-extrabold leading-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] truncate" style={{ opacity: 1 }}>
+          <span className="text-left text-xl md:text-3xl font-extrabold leading-tight text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] truncate" style={{ opacity: 1 }}>
             {option.text}
           </span>
         )}
