@@ -92,10 +92,10 @@ export const ResultsChart: React.FC<ResultsChartProps> = ({
               {/* Vote Count Label - Above Bar */}
               {count > 0 && (
                 <div className="mb-2 text-center z-10">
-                  <div className="text-3xl font-bold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                  <div className="text-4xl font-black text-black drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]" style={{ opacity: 1 }}>
                     {count}
                   </div>
-                  <div className="text-lg text-white/95 font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                  <div className="text-xl text-black font-extrabold drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]" style={{ opacity: 1 }}>
                     {pct}%
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export const ResultsChart: React.FC<ResultsChartProps> = ({
               </div>
 
               {/* Label Below */}
-              <div className="mt-3 text-center text-gray-200 text-base font-semibold max-w-[120px]">
+              <div className="mt-3 text-center text-black text-lg font-extrabold max-w-[120px] drop-shadow-[0_2px_4px_rgba(255,255,255,0.9)]" style={{ opacity: 1 }}>
                 {opt.text}
               </div>
             </div>
