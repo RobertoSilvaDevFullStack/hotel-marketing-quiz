@@ -36,17 +36,17 @@ export const AnswerCard: React.FC<AnswerCardProps> = ({
         relative w-full h-full p-4 flex items-center justify-between
         text-white font-bold shadow-lg transition-all transform
         ${bgClass}
-        ${disabled ? 'opacity-90 cursor-default' : 'hover:scale-[1.02] hover:shadow-xl active:scale-95 cursor-pointer'}
+        ${disabled ? 'cursor-default' : 'hover:scale-[1.02] hover:shadow-xl active:scale-95 cursor-pointer'}
         ${selected ? 'ring-4 ring-white/50 z-10' : ''}
         rounded-sm
       `}
     >
-      <div className={`flex items-center gap-4 flex-1 overflow-hidden transition-opacity ${selected ? 'opacity-30' : 'opacity-100'}`}>
+      <div className={`flex items-center gap-4 flex-1 overflow-hidden ${selected ? 'opacity-30' : ''}`}>
         <div className="flex-shrink-0">
           <ShapeIcon shape={option.shape} />
         </div>
         {showText && (
-          <span className="text-left text-xl md:text-3xl font-extrabold leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] truncate">
+          <span className="text-left text-xl md:text-3xl font-extrabold leading-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] truncate" style={{ opacity: 1 }}>
             {option.text}
           </span>
         )}
